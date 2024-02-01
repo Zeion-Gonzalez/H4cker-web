@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/HorizontalScrollActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:background="?attr/instabug_primary_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/instabug_attach_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.instabug.library.view.IconView
+                android:gravity="center"
+                android:id="@+id/instabug_attach_video_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:instabug_icon="capture_video"/>
+            <TextView
+                android:id="@+id/instabug_attach_video_label"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instabug_str_record_video"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/instabug_attach_screenshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.instabug.library.view.IconView
+                android:gravity="center"
+                android:id="@+id/instabug_attach_screenshot_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:instabug_icon="capture_screenshot"/>
+            <TextView
+                android:id="@+id/instabug_attach_screenshot_label"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instabug_str_take_screenshot"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/instabug_attach_gallery_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.instabug.library.view.IconView
+                android:gravity="center"
+                android:id="@+id/instabug_attach_gallery_image_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:instabug_icon="photo_library"/>
+            <TextView
+                android:id="@+id/instabug_attach_gallery_image_label"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/instabug_str_add_photo"/>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

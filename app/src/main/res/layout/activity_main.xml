@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_web_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Url"
+        android:inputType="textWebEmailAddress"
+        android:imeOptions="actionGo"
+        android:backgroundTint="@color/menubg"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintEnd_toEndOf="parent"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <im.delight.android.webview.AdvancedWebView
+        android:theme="@style/Theme.AppCompat.Light"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:layout_constraintEnd_toEndOf="parent"
+        xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

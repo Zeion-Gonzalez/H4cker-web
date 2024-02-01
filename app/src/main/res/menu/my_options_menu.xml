@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item
+        xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/action_back"
+        android:orderInCategory="100"
+        android:title="Back"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:showAsAction="always"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:showAsAction="always"/>
+    <item
+        android:id="@+id/action_desktop"
+        android:orderInCategory="100"
+        android:title="Force Desktop Mode"
+        xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:showAsAction="always"/>
+    <item
+        android:id="@+id/action_clearcookies"
+        android:orderInCategory="100"
+        android:title="Clear Cookies"
+        xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:showAsAction="always"/>
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="100"
+        android:title="Give Feedback"
+        xmlns:ns5="http://schemas.android.com/apk/res-auto" ns5:showAsAction="always"/>
+</menu>

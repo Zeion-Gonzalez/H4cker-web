@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/InstabugBaseContainer">
+    <include
+        android:id="@+id/instabug_toolbar"
+        layout="@layout/instabug_lyt_toolbar"/>
+    <ViewStub
+        android:id="@+id/instabug_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

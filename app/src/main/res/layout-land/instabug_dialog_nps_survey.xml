@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:id="@+id/instabug_survey_dialog_container"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.instabug.library.p031ui.custom.InstabugAutoResizeTextView
+        android:ellipsize="none"
+        android:gravity="center"
+        android:id="@+id/instabug_text_view_question"
+        android:background="?attr/instabug_survey_dialog_header_transition"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:layout_centerHorizontal="true"
+        style="@style/InstabugSurveyDialogQuestion"/>
+    <com.instabug.survey.p036ui.custom.NPSLayout
+        android:id="@+id/instabug_survey_nps_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/instabug_text_view_question"
+        android:layout_centerHorizontal="true"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:rows="1"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/instabug_color_text_grey_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaset_likely"
+        android:layout_below="@+id/instabug_survey_nps_layout"
+        android:layout_alignLeft="@+id/instabug_survey_nps_layout"
+        android:layout_alignStart="@+id/instabug_survey_nps_layout"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/instabug_color_text_grey_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/most_likely"
+        android:layout_below="@+id/instabug_survey_nps_layout"
+        android:layout_alignRight="@+id/instabug_survey_nps_layout"
+        android:layout_alignEnd="@+id/instabug_survey_nps_layout"/>
+</RelativeLayout>

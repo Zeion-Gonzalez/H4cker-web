@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/instabug_prompt_option_container"
+    style="@style/InstabugDialogItemContainer">
+    <ImageView
+        android:id="@+id/instabug_prompt_option_icon"
+        android:tint="?attr/instabug_theme_tinting_color"
+        style="@style/InstabugDialogItemImage"/>
+    <TextView
+        android:id="@+id/instabug_prompt_option_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/InstabugDialogItemText"/>
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/instabug_notification_count"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="10dp"
+        style="@style/InstabugNotificationCountIcon"/>
+</LinearLayout>

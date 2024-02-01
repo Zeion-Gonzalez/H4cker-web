@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="web.hacker"
+    android:versionCode="5"
+    android:versionName="1.2">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <application
+        android:label="Web Hacker"
+        android:icon="@ac/__launcher_icon"
+        android:name="com.invoate.amybridges.invoatewebinspector.InstabugHandler"
+        android:testOnly="false"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ac/__launcher_icon">
+        <activity
+            android:theme="@style/Theme.Light.ActionBar"
+            android:label="Web Hacker"
+            android:icon="@ac/__launcher_icon"
+            android:name="com.invoate.amybridges.invoatewebinspector.MainActivity"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"
+            android:roundIcon="@ac/__launcher_icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0"/>
+        <activity
+            android:theme="@style/InstabugTranslucentSdkTheme"
+            android:name="com.instabug.survey.p036ui.SurveyActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.survey.network.service.InstabugSurveysSubmitterService"/>
+        <service android:name="com.instabug.crash.network.InstabugCrashesUploaderService"/>
+        <activity
+            android:theme="@style/InstabugSdkTheme"
+            android:name="com.instabug.chat.p011ui.ChatActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.instabug.chat.network.InstabugMessageUploaderService"/>
+        <service android:name="com.instabug.chat.network.InstabugPushNotificationTokenService"/>
+        <activity
+            android:theme="@style/InstabugSdkTheme"
+            android:name="com.instabug.bug.view.BugReportingActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/InstabugTranslucentSdkTheme"
+            android:name="com.instabug.bug.view.SuccessActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/InstabugTranslucentSdkTheme"
+            android:name="com.instabug.bug.view.ReportCategoriesActivity"
+            android:launchMode="singleTop"/>
+        <service android:name="com.instabug.bug.network.InstabugBugsUploaderService"/>
+        <service android:name="com.instabug.bug.view.actionList.service.ReportCategoriesService"/>
+        <activity
+            android:theme="@style/InstabugTranslucentSdkTheme"
+            android:name="com.instabug.library.p031ui.promptoptions.PromptOptionsActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data
+                    android:scheme="instabug"
+                    android:host="instabug.com"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.instabug.library.network.worker.uploader.InstabugSessionUploaderService"/>
+        <service android:name="com.instabug.library.network.worker.fetcher.InstabugFeaturesFetcherService"/>
+        <service android:name="com.instabug.library.internal.video.VideoProcessingService"/>
+        <service android:name="com.instabug.library.analytics.network.InstabugAnalyticsUploaderService"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.instabug.library.internal.video.RequestPermissionActivity"/>
+        <service android:name="com.instabug.library.internal.video.AutoScreenRecordingService"/>
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloningMode"
+            android:value="MANIFEST"/>
+        <meta-data
+            android:name="com.applisto.appcloner.name"
+            android:value="Web Hacker"/>
+        <meta-data
+            android:name="com.applisto.appcloner.originalName"
+            android:value="Droid Web Inspector"/>
+        <meta-data
+            android:name="com.applisto.appcloner.originalPackageName"
+            android:value="Y29tLmludm9hdGUuYW15YnJpZGdlcy5pbnZvYXRld2ViaW5zcGVjdG9y"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloneSource"
+            android:value="installed_app"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloneTimestamp"
+            android:value="1664907330456"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildSerial"
+            android:value="67cc60df586b4638"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildManufacturer"
+            android:value="OPPO"/>
+        <meta-data
+            android:name="com.applisto.appcloner.cloneBuildModel"
+            android:value="CPH1937"/>
+        <meta-data
+            android:name="com.applisto.appcloner.clonePremiumVersion"
+            android:value="true"/>
+        <meta-data
+            android:name="com.applisto.appcloner.forceDeviceLock"
+            android:value="false"/>
+        <meta-data
+            android:name="com.applisto.appcloner.runtimeModdingOptions"
+            android:value="false"/>
+        <meta-data
+            android:name="com.applisto.appcloner.bundleOriginalApp"
+            android:value="false"/>
+        <meta-data
+            android:name="com.applisto.appcloner.newIdentity"
+            android:value="false"/>
+        <meta-data
+            android:name="com.applisto.appcloner.versionCode"
+            android:value="5"/>
+        <meta-data
+            android:name="com.applisto.appcloner.versionName"
+            android:value="1.2"/>
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerPackageName"
+            android:value="com.applisto.appcloner"/>
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionName"
+            android:value="2.7.1"/>
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerVersionCode"
+            android:value="20091912"/>
+        <meta-data
+            android:name="com.applisto.appcloner.appClonerClassesVersionCode"
+            android:value="20190829"/>
+        <meta-data
+            android:name="com.applisto.appcloner.originalSignatures"
+            android:value="AQAAABwAAABhAG4AZAByAG8AaQBkAC4AYwBvAG4AdABlAG4AdAAuAHAAbQAuAFMAaQBnAG4AYQB0AHUAcgBlAAAAAACLBQAAMIIFhzCCA2+gAwIBAgIVAOuDAmtzdM6WsUvkBOByHxUSIBu6MA0GCSqGSIb3DQEBCwUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0xODAyMjgwODM0MzdaFw00ODAyMjgwODM0MzdaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAJUfdO3QbKoHtcUDwKTLQIT0jwLmmlq8sDB4yWUZkQW0UWTmj/5qo5FooqF0fY0wqzJowZvuWowH2RYXh4GnwQlNa2eRBT8hklZ+kysQA1fPC7YHoYO5S09wUgo5Ue0tx0IA/RycrmzdXVbFXC79/zgHgQ0idQf2Uu6rCEtgrYlvZ4e7nRfNX8Fn/ZEz7j8caiSYCk6fftBuwHS5wXXAVCbR6ViymX9n6/8NYWaTu2YPOLSFYJ6nTWStnK9EQLd+1yC5s5or2qmp+P07hKTuinr1jlXPj2OYWpyp7PxUfBueeYp/jzPARDFru2PocMmPKFWlnrS8kdWt1KJXdPMBjtG0hgwJsJuYwQn9xf/IjQ0BXXhNnIB6Ea4WRaIlIIQGHBf9ykBr254lBJa9uonaJlO06wp0NjRP5WMSds3IxrBdlvJWwbpF442k7hGavKLEofoZoRsTwppsxKMir/kcKC9N4UkDgAHMvCjY1dhlVzUEwiBWUUOdTXFmnNLPOShf9JwWsUH09jQP4n5rAb+0GkV2OaF6e1R4Rq6OHmYnglaKMHjHBYPR9Qi47tRZfy2qPsJAL9FijGOJ0o6S0f6XNhAff5g2o/sxTFeWXvzjPMk5SYstsxKrvPtS4R3j2F7jHQej6hJpOAwegUid6pmI81nTm89/HhfhX/3KnvrE7SdbAgMBAAGjEDAOMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAGOc2w3RNU5byB2N3f2JLLI/GAye4bg7JSLUdB9aRvdshFlZhsmgJtuDhDzBgjmaGXy9uxdB2xH8GBT8h+DWJ2fASCRzbrUzo3Fs0lJAahHxm7MCbHcDQNm5J/rluUv6ArTmq8z/++bsajqVIFQLIuNrGpbgrf6PRzeIHNjzeezjpQVK435/IwkzqEyxaJpDNMjRFQ6kt/IwUG7+jkcqi9OPd29JYwHjz/I8jXA8KlqN9+hM7lQuYNySbVAx6MDEP56iG4qr8lZhIiv75K/+VpLMbSGIRjLBJ+uHASdOjqysuVmkI7KuN2m1tKQns/mL56Kkwk1eD2byY/tZg/3CIs5vm56PYdGsR8nRTC+agmoU65TL+KL1aIF89S2AITdgpgZixGedTHFoRM5Lggt2Lf/aEx51aFcNhm8PI+2e5ZjodcnUllPfy5HMm60N1PoO7EAyY4eJn4TSyvNciTnumJb9WBEiADdyKDEgfv77Ca+nUJrPFga7VYU8/4alREHFyYSeYupYcl5D+MUfM4iJWtwfSVqwHLobX/liBoPdVtRdoXoxo3t5QvUDF9EneX58RUeWxaNYGb6h+ivfsnQSGu357/gHqVdQ44HSg7Zf7Q5leIvcSgbzujT2ZQu8mLQbj3YdQpStzCJYOlKfUJpd2IAiSIM2GThOuxfSo0u+S5Z5AA=="/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="1"/>
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false"/>
+        <provider
+            android:name="com.applisto.appcloner.classes.DefaultProvider"
+            android:exported="true"
+            android:authorities="web.hacker.com.applisto.appcloner.classes.DefaultProvider"
+            android:initOrder="2147483647"/>
+        <service
+            android:name="com.applisto.appcloner.service.RemoteService"
+            android:exported="true"/>
+        <receiver
+            android:name="com.applisto.appcloner.classes.DefaultProvider.DefaultReceiver"
+            android:exported="true"/>
+        <activity
+            android:name="com.applisto.appcloner.classes.DefaultProvider.MyActivity"
+            android:exported="true"/>
+        <receiver android:name="com.applisto.appcloner.classes.FakeCamera.FakeCameraReceiver">
+            <intent-filter>
+                <action android:name="com.applisto.appcloner.action.FAKE_CAMERA_SELECT_CAMERA_PICTURE"/>
+                <action android:name="com.applisto.appcloner.action.FAKE_CAMERA_ROTATE_CLOCKWISE"/>
+                <action android:name="com.applisto.appcloner.action.FAKE_CAMERA_ROTATE_ANTI_CLOCKWISE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.applisto.appcloner.classes.DisableClipboardAccess.ClearClipboardReceiver"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:name="com.applisto.appcloner.classes.FakeCamera.FakeCameraActivity"/>
+        <meta-data
+            android:name="com.applisto.appcloner.hideFromClonedApps"
+            android:value="true"/>
+        <meta-data
+            android:name="com.applisto.appcloner.ignoreUpdates"
+            android:value="true"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+</manifest>

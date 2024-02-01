@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/instabug_prompt_options_dialog_container"
+    android:paddingLeft="24dp"
+    android:paddingTop="40dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="40dp"
+    style="@style/InstabugDialogContainer">
+    <RelativeLayout
+        android:id="@+id/instabug_main_prompt_container"
+        android:background="?attr/instabug_background_color"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:gravity="start|center_vertical"
+            android:layout_gravity="center"
+            android:id="@+id/instabug_fragment_title"
+            android:background="?attr/instabug_background_color"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            style="@style/InstabugToolbarTitle"/>
+        <ListView
+            android:id="@+id/instabug_prompt_options_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_below="@+id/instabug_fragment_title"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instabug_main_prompt_container"
+        android:layout_centerHorizontal="true"
+        layout="@layout/instabug_lyt_pbi"/>
+</RelativeLayout>

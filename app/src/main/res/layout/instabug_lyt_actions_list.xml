@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center"
+    android:id="@+id/instabug_container"
+    android:paddingLeft="24dp"
+    android:paddingTop="40dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="40dp"
+    style="@style/InstabugDialogContainer">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/instabug_actions_list_container"
+        android:background="?attr/instabug_background_color"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:gravity="start"
+            android:id="@+id/instabug_fragment_title"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            style="@style/InstabugToolbarTitle"/>
+        <ListView
+            android:id="@+id/instabug_actions_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+    </LinearLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instabug_actions_list_container"
+        layout="@layout/instabug_lyt_pbi"/>
+</RelativeLayout>

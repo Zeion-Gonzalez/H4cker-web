@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/instabug_fragment_container"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/instabug_pbi_footer"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/instabug_pbi_footer"
+        android:background="?attr/instabug_primary_color"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="?attr/instabug_foreground_color"
+            android:id="@+id/text_view_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instabug_str_powered_by_instabug"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/instabug_grid_img_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="?attr/instabug_attachment_bg_color"
+        android:padding="@dimen/instabug_bottom_sheet_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/instabug_bottom_sheet_padding">
+        <ImageView
+            android:id="@+id/instabug_img_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.instabug.library.view.IconView
+        android:textSize="18sp"
+        android:textColor="?attr/instabug_attachment_bg_icon_color"
+        android:gravity="top|right"
+        android:id="@+id/instabug_btn_remove_attachment"
+        android:layout_width="@dimen/instabug_remove_attachment_button_size"
+        android:layout_height="@dimen/instabug_remove_attachment_button_size"
+        android:layout_alignParentRight="true"
+        xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:instabug_icon="cancel"/>
+</RelativeLayout>
