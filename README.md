@@ -8,5 +8,4 @@ untuk sumber aslinya saya tidak tahu pasti tapi saya menemukan ini di channel te
 # tampilan 
 untuk melihat-lihat tampilan dari web hacker alini anda bisa melihatnya secara sederhana untuk membuat anda berpikir sekiranya minat atau tidaknya dibawah ini :
 # Secrenshoot
-![image](https://github.com/Zeion-Gonzalez/H4cker-web/blob/master/test.jpg)
-![image](https://github.com/Zeion-Gonzalez/H4cker-web/blob/master/tyst.jpg)
+![image](https://github.com/Zeion-Gonzalez/H4cker-web/blob/master/test.jpg)     ![image](https://github.com/Zeion-Gonzalez/H4cker-web/blob/master/tyst.jpg)
